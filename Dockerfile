@@ -70,7 +70,7 @@ RUN set -ex \
 
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 5.3.0
-ENV NODE_GLOBAL_NPM bower mocha gulp
+ENV NODE_GLOBAL_NPM mocha gulp bower grunt-cli node-gyp
 
 # sbejga: added apt-get install libkrb5-dev build-essential
 #         to install kerberos and make/gcc for mongodb client installation via npm
