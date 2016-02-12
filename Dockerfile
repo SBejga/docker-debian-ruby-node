@@ -82,7 +82,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc \
   && apt-get update \
   && apt-get install -y libkrb5-dev build-essential \
-  && npm install -g $NODE_GLOBAL_NPM \
+  && npm install --silent -g $NODE_GLOBAL_NPM \
   && rm -rf /var/lib/apt/lists/* \
 
 VOLUME /usr/rubyapp/
