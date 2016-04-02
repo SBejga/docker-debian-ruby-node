@@ -69,7 +69,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 5.3.0
+ENV NODE_VERSION 5.7.1
 ENV NODE_GLOBAL_NPM mocha gulp bower grunt-cli node-gyp
 
 # sbejga: added apt-get install libkrb5-dev build-essential
